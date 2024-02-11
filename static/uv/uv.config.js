@@ -1,5 +1,5 @@
 self.__uv$config = {
-    prefix: '/static/tiw/',
+    prefix: '/static/zatoga-beam/',
     bare:'https://v4-omega-vert.vercel.app/bare/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
