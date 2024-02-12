@@ -1,6 +1,6 @@
 self.__uv$config = {
     prefix: '/static/zatoga-beam/',
-    bare:'https://v4-omega-vert.vercel.app/bare/',
+    bare:'https://bare.nitrojade.com/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/static/uv/uv.handler.js',
