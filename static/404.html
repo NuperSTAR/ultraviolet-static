@@ -49,21 +49,8 @@
     <script src="error.js"></script>
       <script>
     navigator.serviceWorker.register("/uv-sw.js");
-
-              if (window.self !== window.top || window.location.pathname.includes("/games/") || window.location.pathname.includes("/apps/") || window.location.pathname.includes("/cheats/") || window.location.pathname.includes("/gameframe.html") || window.location.pathname.includes("/appframe.html")) {
-                document.getElementById("uv-error").innerHTML = `
-                  <div class="title">Registering Service Worker</div>
-                  <div class="message">Please Wait...</div>
-                  `;
-                try {
-                  navigator.serviceWorker.register("/uv-sw.js");
-                  window.location.reload();
-                } catch (error) {
-                  console.error("Service Worker registration failed:", error);
-                  console.warn("Since the registration of the service worker failed, many things will also break.");
-                  window.location.reload();
-                }
-              } 
+    navigator.serviceWorker.register("/sw.js");
+ window.location.reload();
 
           </script>
   </body>
